@@ -1,0 +1,18 @@
+div {
+    list-style-type: none;
+    counter-reset: css-counter 0;
+}
+div p {
+    counter-increment: css-counter 1;
+}
+div p:before {
+    content: counter(css-counter);
+}
+ul{
+    list-style-type: none;
+    counter-reset: css-counters 0;
+}
+ul li:before{
+    counter-increment: css-counters;
+    content: counters(css-counters, ".")"";
+}
